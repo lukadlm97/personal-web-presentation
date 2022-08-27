@@ -36,18 +36,16 @@ const AppBar=(props:SidebarProps)=> {
 
 
     return (
-        <Grid container spacing={2}>
-            <Grid item xs={2}>
+        <Grid container spacing={2} style={{background:'#2B4865',color:'#8FE3CF'}}>
+            <Grid item xs={8}>
                 <Item>
                      <MenuIcon className="cursor-pointer" onClick={onDrawerClick} />
                 </Item>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={4} container justify="flex-end">
+                <Item style={{color:'#8FE3CF'}}>Personal web presentation of Luka Radovanovic</Item>
             </Grid>
-            <Grid item xs={4}>
-                <Item>Luka Radovanovic</Item>
-            </Grid>
-            </Grid>
+        </Grid>
     )
 }
 export default AppBar
