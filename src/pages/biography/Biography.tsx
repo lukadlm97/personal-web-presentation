@@ -19,7 +19,7 @@ const useStyles = makeStyles({
       width: "auto",
       color:"#8FE3CF",
       background: "#2B4865", 
-      display: "flex",
+      
       flexFlow: "column"
     }
   });
@@ -31,14 +31,14 @@ export default function Biography() {
         return (
             <Grid container className={style.body} >
                 <h1> Biography Page</h1>
-                <Grid   style={{display:'flex'}}>
-                    <Grid item xs={7} style={{background:'#002B5B',marginLeft:'20px',marginBottom:'50px',padding:'10px'}}>
+                <Grid  style={{display:'flex'}}>
+                    <Grid item xs={12} style={{background:'#002B5B',marginLeft:'20px',marginBottom:'50px',padding:'10px'}}>
                         <h3>Education</h3>
                         <Timeline>
                             <CustomTimelineItem fromTo='2004-2008' schoolType='Primary school' schoolName='OS Dimitrije Tucovic - Mali Borak' level={null} domain={null} />
                             <CustomTimelineItem fromTo='2008-2012' schoolType='Primary school' schoolName='OS Mile Dubljevic - Lajkovac' level={null} domain={null} />
-                            <CustomTimelineItem fromTo='2012-2016' schoolType='Secondary school' schoolName='SS 17. septembar - Lajkovac' level={null} domain='Computer technican (5.0/5.0)'
-                                />
+                            <CustomTimelineItem fromTo='2012-2016' schoolType='Secondary school' schoolName='SS 17. septembar - Lajkovac' 
+                            level={null} domain='Computer technican (5.0/5.0)'/>
                             <CustomTimelineItem fromTo='2016-2020' schoolType=' Graduate Studies' schoolName='Faculty of organizational science - Universty of Belgrade' 
                             level='Bechelor of Science (9.35/10.0)' domain='Information systems and technologies' />
                             <CustomTimelineItem fromTo='2020-2021' schoolType=' Postgraduate Studies' schoolName='Faculty of organizational science - Universty of Belgrade'
@@ -46,7 +46,7 @@ export default function Biography() {
                 
                         </Timeline>
                     </Grid>
-                    <Grid item xs={5} style={{background:'#002B5B',marginLeft:'5px',padding:'10px'}}>
+                    <Grid item xs={12} style={{background:'#002B5B',marginLeft:'5px',padding:'10px'}}>
                         <Box >
                             <h3>
                                 Details
