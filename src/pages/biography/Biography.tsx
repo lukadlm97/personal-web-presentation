@@ -11,6 +11,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import SchoolIcon from '@mui/icons-material/School';
 import Typography from '@mui/material/Typography';
+import CustomTimelineItem from '../../components/timelineItem/CustomTimelineItem'
 
 
 const useStyles = makeStyles({
@@ -30,162 +31,36 @@ export default function Biography() {
         return (
             <Grid container className={style.body} >
                 <h1> Biography Page</h1>
-                <Grid container style={{display:'flex'}}>
-                    <Grid item xs={5} style={{background:'#002B5B',margin:'50px',padding:'10px'}}>
+                <Grid   style={{display:'flex'}}>
+                    <Grid item xs={7} style={{background:'#002B5B',marginLeft:'20px',marginBottom:'50px',padding:'10px'}}>
                         <h3>Education</h3>
                         <Timeline>
-                            <TimelineItem>
-                            <TimelineOppositeContent
-                                sx={{ m: 'auto 0' }}
-                                align="right"
-                                variant="body2"
-                                color="text.secondary"
-                                style={{ color: '#8FE3CF' }}
-                            >
-                                2004-2008
-                            </TimelineOppositeContent>
-                            <TimelineSeparator>
-                                <TimelineConnector />
-                                <TimelineDot>
-                                <SchoolIcon style={{ color: '#256D85' }}/>
-                                </TimelineDot>
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                <Typography variant="h6" component="span"
-                                >
-                                Primary school
-                                </Typography>
-                                <Typography>OS Dimitrije Tucovic - Mali Borak</Typography>
-                            </TimelineContent>
-                            </TimelineItem>
-                            <TimelineItem>
-                            <TimelineOppositeContent
-                                sx={{ m: 'auto 0' }}
-                                align="right"
-                                variant="body2"
-                                color="text.secondary"
-                                style={{ color: '#8FE3CF' }}
-                            >
-                                2008-2012
-                            </TimelineOppositeContent>
-                            <TimelineSeparator>
-                                <TimelineConnector />
-                                <TimelineDot>
-                                <SchoolIcon style={{ color: '#256D85' }}/>
-                                </TimelineDot>
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                <Typography variant="h6" component="span"
-                                >
-                                Primary school
-                                </Typography>
-                                <Typography>OS Mile Dubljevic - Lajkovac</Typography>
-                            </TimelineContent>
-                            </TimelineItem>
-                            <TimelineItem>
-                            <TimelineOppositeContent
-                                sx={{ m: 'auto 0' }}
-                                align="right"
-                                variant="body2"
-                                color="text.secondary"
-                                style={{ color: '#8FE3CF' }}
-                            >
-                                2012-2016
-                            </TimelineOppositeContent>
-                            <TimelineSeparator>
-                                <TimelineConnector />
-                                <TimelineDot>
-                                <SchoolIcon style={{ color: '#256D85' }}/>
-                                </TimelineDot>
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                <Typography variant="h6" component="span">
-                                Secondary school
-                                </Typography>
-                                <Typography>SS 17. septembar - Lajkovac</Typography>
-                                <Typography>Computer technican (5.0/5.0)</Typography>
-                            </TimelineContent>
-                            </TimelineItem>
-                            <TimelineItem>
-                            <TimelineOppositeContent
-                                sx={{ m: 'auto 0' }}
-                                align="right"
-                                variant="body2"
-                                color="text.secondary"
-                                style={{ color: '#8FE3CF' }}
-                            >
-                                2016-2020
-                            </TimelineOppositeContent>
-                            <TimelineSeparator>
-                                <TimelineConnector />
-                                <TimelineDot>
-                                <SchoolIcon style={{ color: '#256D85' }}/>
-                                </TimelineDot>
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                <Typography variant="h6" component="span"
-                                >
-                                Graduate Studies
-                                </Typography>
-                                <Typography>Faculty of organizational science - Universty of Belgrade</Typography>
-                                <Typography>Information system and technologes</Typography>
-                                <Typography>Bachelor of Science (9.35/10.0)</Typography>
-                            </TimelineContent>
-                            </TimelineItem>
-
-                            <TimelineItem>
-                            <TimelineOppositeContent
-                                sx={{ m: 'auto 0' }}
-                                align="right"
-                                variant="body2"
-                                color="text.secondary"
-                                style={{ color: '#8FE3CF' }}
-                            >
-                                2020-2021
-                            </TimelineOppositeContent>
-                            <TimelineSeparator>
-                                <TimelineConnector />
-                                <TimelineDot>
-                                <SchoolIcon style={{ color: '#256D85' }}/>
-                                </TimelineDot>
-                                <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                <Typography variant="h6" component="span"
-                                >
-                                Postgraduate Studies
-                                </Typography>
-                                <Typography>Faculty of organizational science - Universty of Belgrade</Typography>
-                                <Typography>Information systems</Typography>
-                                <Typography>Master of Science (10.0/10.0)</Typography>
-                            </TimelineContent>
-                            </TimelineItem>
-
-                        
+                            <CustomTimelineItem fromTo='2004-2008' schoolType='Primary school' schoolName='OS Dimitrije Tucovic - Mali Borak' level={null} domain={null} />
+                            <CustomTimelineItem fromTo='2008-2012' schoolType='Primary school' schoolName='OS Mile Dubljevic - Lajkovac' level={null} domain={null} />
+                            <CustomTimelineItem fromTo='2012-2016' schoolType='Secondary school' schoolName='SS 17. septembar - Lajkovac' level={null} domain='Computer technican (5.0/5.0)'
+                                />
+                            <CustomTimelineItem fromTo='2016-2020' schoolType=' Graduate Studies' schoolName='Faculty of organizational science - Universty of Belgrade' 
+                            level='Bechelor of Science (9.35/10.0)' domain='Information systems and technologies' />
+                            <CustomTimelineItem fromTo='2020-2021' schoolType=' Postgraduate Studies' schoolName='Faculty of organizational science - Universty of Belgrade'
+                                level='Master of Science (10.0/10.0)' domain='Information systems'/>
+                
                         </Timeline>
                     </Grid>
-                    <Grid item xs={5} style={{textAlign:'justify',background:'#002B5B',margin:'50px',padding:'10px'}}>
+                    <Grid item xs={5} style={{background:'#002B5B',marginLeft:'5px',padding:'10px'}}>
                         <Box >
-                            
-                            <h2>
+                            <h3>
                                 Details
-                            </h2>
+                            </h3>
                             <Typography variant="h6" gutterBottom style={{color:'#8FE3CF'}}> Primary school </Typography>
-                            <Typography variant="body1" gutterBottom>
-            body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-            blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur,
-            neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum
-            quasi quidem quibusdam.
-        </Typography>
+                            <Typography variant="body1" gutterBottom style={{textAlign:'justify'}}>
+                                body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                                blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur,
+                                neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum
+                                quasi quidem quibusdam.
+                            </Typography>
                         </Box>
                     </Grid>
                 </Grid>
-              
-                
             </Grid>
         );
       }
