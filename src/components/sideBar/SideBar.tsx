@@ -6,7 +6,7 @@ import Drawer  from '@material-ui/core/Drawer'
 
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
+import MuiListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
@@ -17,7 +17,7 @@ import CloseIcon from '@mui/icons-material/Close'
 import HomeIcon from '@mui/icons-material/Home';
 import SportsHandballIcon from '@mui/icons-material/SportsHandball';
 import AssignmentIcon from '@mui/icons-material/Assignment';
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles,withStyles  } from "@material-ui/core/styles";
 
 import './sidebar.css'
 import { useNavigate } from "react-router-dom";
@@ -38,11 +38,37 @@ const useStyles = makeStyles({
     width: "auto"
   },
   paper: {
-    background: "#002B5B"
+    background: "#002B5B",
+    padding:'5px'
   }
 });
 
-
+const ListItem = withStyles({
+    root: {
+      "&$selected": {
+        backgroundColor: "red",
+        color: "white",
+        "& .MuiListItemIcon-root": {
+          color: "white"
+        }
+      },
+      "&$selected:hover": {
+        backgroundColor: "purple",
+        color: "white",
+        "& .MuiListItemIcon-root": {
+          color: "white"
+        }
+      },
+      "&:hover": {
+        backgroundColor: "#256D85",
+        color: "#white",
+        "& .MuiListItemIcon-root": {
+          color: "white"
+        }
+      }
+    },
+    selected: {}
+  })(MuiListItem);
 const Sidebar=(props:SidebarProps) =>{
 
     const classes = useStyles();
@@ -72,7 +98,7 @@ const Sidebar=(props:SidebarProps) =>{
         classes={{ paper: classes.paper }}>
                     <CloseIcon onClick={onDrawerClose} classes={classes.list} style={{ color: '#8FE3CF' }}/>
                 <List className={classes.list}>
-                    <ListItem key='home' disablePadding>
+                    <ListItem key='home' disablePadding >
                         <ListItemButton onClick={()=>onMenuItemClick('home')}>
                         <ListItemIcon>
                              <HomeIcon style={{ color: '#8FE3CF' }}/> 

@@ -18,7 +18,10 @@ const useStyles = makeStyles((theme) => ({
 		minHeight: 60,
 		alignItems: "center",
 		//padding: theme.spacing(0, 1)
-        background:'#002B5B',color:'#8FE3CF',display:'flex'
+        background:'#002B5B'
+        ,color:'#8FE3CF'
+        ,display:'flex',
+        padding:'10px'
 	},
 	fixedWidthContainer: {
 		maxWidth: "240px",

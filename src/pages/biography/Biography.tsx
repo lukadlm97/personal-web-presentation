@@ -11,7 +11,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import SchoolIcon from '@mui/icons-material/School';
 import Typography from '@mui/material/Typography';
-import CustomTimelineItem from '../../components/timelineItem/CustomTimelineItem'
+import EducationTimelineItem from '../../components/timelineItem/EducationTimelineItem'
 
 
 const useStyles = makeStyles({
@@ -35,18 +35,18 @@ export default function Biography() {
                     <Grid item xs={12} style={{background:'#002B5B',marginLeft:'20px',marginBottom:'50px',padding:'10px'}}>
                         <h3>Education</h3>
                         <Timeline>
-                            <CustomTimelineItem fromTo='2004-2008' schoolType='Primary school' schoolName='OS Dimitrije Tucovic - Mali Borak' level={null} domain={null} />
-                            <CustomTimelineItem fromTo='2008-2012' schoolType='Primary school' schoolName='OS Mile Dubljevic - Lajkovac' level={null} domain={null} />
-                            <CustomTimelineItem fromTo='2012-2016' schoolType='Secondary school' schoolName='SS 17. septembar - Lajkovac' 
+                            <EducationTimelineItem fromTo='2004-2008' schoolType='Primary school' schoolName='OS Dimitrije Tucovic - Mali Borak' level={null} domain={null} />
+                            <EducationTimelineItem fromTo='2008-2012' schoolType='Primary school' schoolName='OS Mile Dubljevic - Lajkovac' level={null} domain={null} />
+                            <EducationTimelineItem fromTo='2012-2016' schoolType='Secondary school' schoolName='SS 17. septembar - Lajkovac' 
                             level={null} domain='Computer technican (5.0/5.0)'/>
-                            <CustomTimelineItem fromTo='2016-2020' schoolType=' Graduate Studies' schoolName='Faculty of organizational science - Universty of Belgrade' 
+                            <EducationTimelineItem fromTo='2016-2020' schoolType=' Graduate Studies' schoolName='Faculty of organizational science - Universty of Belgrade' 
                             level='Bechelor of Science (9.35/10.0)' domain='Information systems and technologies' />
-                            <CustomTimelineItem fromTo='2020-2021' schoolType=' Postgraduate Studies' schoolName='Faculty of organizational science - Universty of Belgrade'
+                            <EducationTimelineItem fromTo='2020-2021' schoolType=' Postgraduate Studies' schoolName='Faculty of organizational science - Universty of Belgrade'
                                 level='Master of Science (10.0/10.0)' domain='Information systems'/>
                 
                         </Timeline>
                     </Grid>
-                    <Grid item xs={12} style={{background:'#002B5B',marginLeft:'5px',padding:'10px'}}>
+                    <Grid item xs={12} style={{background:'#002B5B',marginRight:'20px',marginLeft:'5px',padding:'10px'}}>
                         <Box >
                             <h3>
                                 Details

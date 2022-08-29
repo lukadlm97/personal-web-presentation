@@ -18,7 +18,7 @@ interface Content{
 }
 
 
-export default function CustomTimelineItem(props:Content){
+export default function EducationTimelineItem(props:Content){
 
     return (
         <TimelineItem>

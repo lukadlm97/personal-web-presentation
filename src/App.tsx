@@ -3,7 +3,7 @@ import logo from './logo1.png';
 import './App.css';
 import { css } from "@emotion/react";
 
-import {createTheme} from '@material-ui/core'
+import {createTheme,makeStyles} from '@material-ui/core'
 import {ThemeProvider} from '@material-ui/styles'
 import Navigator from './Navigator';
 import AppBar from './components/appBar/AppBar'
@@ -25,7 +25,7 @@ const theme = createTheme({
       secondary: '#a4a6b3',
     },
     background: {
-      default: '#f7f8fc',
+      default: '#2B4865',
     },
   },
   typography: {
@@ -35,10 +35,26 @@ const theme = createTheme({
     fontWeightRegular: 400,
     htmlFontSize: 20,
   },
+
 })
+
+
+const useStyles = makeStyles({
+  body: {
+    width: "auto",
+      color:"#8FE3CF",
+      background: "#2B4865", 
+    textAlign: 'center',
+      flexFlow: "column",
+  },
+  appBar:{
+  }
+});
+
+
 function App() {
   const [drawerState, setDrawerState] = React.useState(false)
-
+  const style = useStyles();
   
   //handle drawer state
     const handleDrawerState=(state:boolean)=>{
@@ -47,10 +63,13 @@ function App() {
 
   return (
   <ThemeProvider theme={theme}>
-    <div className="App">
+    <div className={style.appBar}>
       <AppBar drawerState={drawerState} onClick={handleDrawerState}/>
       <SideBar drawerState={drawerState} onClick={handleDrawerState}/>
-      <Navigator/>
+      <div className={style.body}>
+
+        <Navigator/>
+      </div>
     </div>
   </ThemeProvider>
      
