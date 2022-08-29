@@ -7,7 +7,6 @@ import {createTheme} from '@material-ui/core'
 import {ThemeProvider} from '@material-ui/styles'
 import Navigator from './Navigator';
 import AppBar from './components/appBar/AppBar'
-
 import SideBar from './components/sideBar/SideBar'
 
 
@@ -51,7 +50,6 @@ function App() {
     <div className="App">
       <AppBar drawerState={drawerState} onClick={handleDrawerState}/>
       <SideBar drawerState={drawerState} onClick={handleDrawerState}/>
-      
       <Navigator/>
     </div>
   </ThemeProvider>

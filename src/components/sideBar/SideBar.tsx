@@ -38,7 +38,7 @@ const useStyles = makeStyles({
     width: "auto"
   },
   paper: {
-    background: "#2B4865"
+    background: "#002B5B"
   }
 });
 
@@ -88,8 +88,8 @@ const Sidebar=(props:SidebarProps) =>{
                         <ListItemText primary='Biography' />
                         </ListItemButton>
                     </ListItem>
-                    <ListItem key='workHistory' disablePadding>
-                        <ListItemButton onClick={()=>onMenuItemClick('workHistory')}>
+                    <ListItem key='expirience' disablePadding>
+                        <ListItemButton onClick={()=>onMenuItemClick('expirience')}>
                         <ListItemIcon>
                             <WorkHistoryIcon style={{ color: '#8FE3CF' }}/>
                         </ListItemIcon>

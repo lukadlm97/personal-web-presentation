@@ -20,8 +20,8 @@ const useStyles = makeStyles({
   });
 
 function NotFound() {
-    
-    const classes = useStyles();
+  const classes = useStyles();
+
   return (
     <Grid className={classes.list}
     alignItems="center"

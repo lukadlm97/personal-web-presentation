@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import Grid from '@material-ui/core/Grid'
 import { makeStyles } from "@material-ui/core/styles";
 
-
-
 const useStyles = makeStyles({
     body: {
       width: "auto",
@@ -15,20 +13,15 @@ const useStyles = makeStyles({
     }
   });
   
-
-
-
-
-
 function Home(){
     const style = useStyles();
 
     return (
         <Grid className={style.body}>
             <h1>Home page</h1>
-            <header>
+            <h4>
         Hi, I'm Luka Radovanovic, and this is my personal web presentation.    
-      </header>
+      </h4>
     </Grid>
     )
 }
