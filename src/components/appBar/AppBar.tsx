@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
         background:'#002B5B'
         ,color:'#8FE3CF'
         ,display:'flex',
-        padding:'10px'
+        padding:'10px',
+        width:'auto'
 	},
 	fixedWidthContainer: {
 		maxWidth: "240px",
@@ -56,7 +57,7 @@ const AppBar=(props:SidebarProps)=> {
 
 
     return (
-        <Grid container spacing={2} style={{}} className={classes.root}>
+        <Grid container spacing={2} className={classes.root}>
             <Grid item xs={2}>
                      <MenuIcon className="cursor-pointer" onClick={onDrawerClick} />
             </Grid>
