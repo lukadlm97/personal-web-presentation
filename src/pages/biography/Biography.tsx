@@ -3,13 +3,6 @@ import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
 import { makeStyles } from "@material-ui/core/styles";
 import Timeline from '@material-ui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import SchoolIcon from '@mui/icons-material/School';
 import Typography from '@mui/material/Typography';
 import EducationTimelineItem from '../../components/timelineItem/EducationTimelineItem'
 

@@ -5,7 +5,6 @@ import Drawer  from '@material-ui/core/Drawer'
 
 
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import MuiListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -23,6 +22,7 @@ import './sidebar.css'
 import { useNavigate } from "react-router-dom";
 
 
+import Footer from '../footer/Footer'
 interface SidebarProps{
 
     onClick:Function
@@ -139,6 +139,7 @@ const Sidebar=(props:SidebarProps) =>{
                         </ListItemButton>
                     </ListItem>
                 </List>
+                <Footer/>
             </Drawer>
             
         </div>

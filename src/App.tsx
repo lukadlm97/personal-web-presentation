@@ -8,6 +8,7 @@ import {ThemeProvider} from '@material-ui/styles'
 import Navigator from './Navigator';
 import AppBar from './components/appBar/AppBar'
 import SideBar from './components/sideBar/SideBar'
+import Footer from './components/footer/Footer'
 
 
 //create material UI theme 
