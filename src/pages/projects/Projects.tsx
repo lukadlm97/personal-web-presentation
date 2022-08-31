@@ -25,35 +25,35 @@ function Projects(){
     const projectState=[
       {
         id:1,
-        description:"description 1",
-        title:"Project 1",
-        technologies:'.NET,React',
-        url:"https://www.google.com/",
-        type:ProjectTechnologiesType.Backend
+        description:"APS.NET Project created follow tutorial by Wes Doyle.",
+        title:"Library managment system",
+        technologies:'ASP.NET,Entity Framework',
+        url:"https://github.com/lukadlm97/library-managment-system",
+        type:ProjectTechnologiesType.FullStack
       } as ProjectType,
       {
         id:2,
-        description:"description 2",
-        title:"Project 2",
-        technologies:'.NET,React',
-        url:"https://www.google.com/",
-        type:ProjectTechnologiesType.Frontend
+        description:"Project created at the final year of studying about the creation of new cooperation propsal with the company for IRC of FON. ",
+        title:"Fpis project",
+        technologies:'.NET,Newtonsoft Json,Entity Framework,React,Typescript,Material-UI,Yup,Router Dom,Axios',
+        url:"https://github.com/lukadlm97/fpis-project",
+        type:ProjectTechnologiesType.FullStack
       } as ProjectType,
       {
         id:3,
-        description:"description 3",
-        title:"Project 3",
-        technologies:'.NET,React',
-        url:"https://www.google.com/",
-        type:ProjectTechnologiesType.ML
+        description:"Project created for subject Service-oriented architecture at Master study, which demonstrate gRPC powerful in .NET 5 ",
+        title:"SOA project",
+        technologies:'.NET,gRPC,Dapper,AutoMapper',
+        url:"https://github.com/lukadlm97/SOA-project",
+        type:ProjectTechnologiesType.Backend
       } as ProjectType,
       {
         id:4,
-        description:"description 4",
-        title:"Project 4",
-        technologies:'.NET,React',
+        description:"In this project, i wanna learn React and technologies suranded by this library. Domain is Formula 1 and similar open-wheel competioton. Application should display drivers, constructors and their drivers, technical staff, competiton result, rankings and in feature some predictions for different drivers and constructors.",
+        title:"F1 application (front-end)",
+        technologies:'React, Typescript, Redux, Material-UI, SCSS',
         url:"https://www.google.com/",
-        type:ProjectTechnologiesType.FullStack
+        type:ProjectTechnologiesType.Frontend
       } as ProjectType,
 
     ] as ProjectType[];

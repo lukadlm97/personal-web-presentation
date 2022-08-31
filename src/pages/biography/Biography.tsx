@@ -24,8 +24,8 @@ export default function Biography() {
         return (
             <Grid container className={style.body} >
                 <h1> Biography Page</h1>
-                <Grid  style={{display:'flex'}}>
-                    <Grid item xs={12} style={{background:'#002B5B',marginLeft:'20px',marginBottom:'50px',padding:'10px'}}>
+                <Box style={{display:'flex'}}>
+                    <Box style={{background:'#002B5B',marginLeft:'20px',marginBottom:'50px',padding:'10px'}}>
                         <h3>Education</h3>
                         <Timeline>
                             <EducationTimelineItem fromTo='2004-2008' schoolType='Primary school' schoolName='OS Dimitrije Tucovic - Mali Borak' level={null} domain={null} />
@@ -38,8 +38,8 @@ export default function Biography() {
                                 level='Master of Science (10.0/10.0)' domain='Information systems'/>
                 
                         </Timeline>
-                    </Grid>
-                    <Grid item xs={12} style={{background:'#002B5B',marginRight:'20px',marginLeft:'5px',padding:'10px'}}>
+                    </Box>
+                    <Box style={{background:'#002B5B',marginRight:'20px',marginLeft:'5px',padding:'10px'}}>
                         <Box >
                             <h3>
                                 Details
@@ -52,8 +52,8 @@ export default function Biography() {
                                 quasi quidem quibusdam.
                             </Typography>
                         </Box>
-                    </Grid>
-                </Grid>
+                    </Box>
+                </Box>
             </Grid>
         );
       }

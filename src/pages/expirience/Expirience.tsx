@@ -41,48 +41,50 @@ const style=useStyles();
 <Grid container className={style.body} >
   <h1>Expirience Page</h1>
   <Grid  style={{display:'flex'}}>
-      <Grid item xs={8} style={{background:'#002B5B',marginLeft:'20px',marginBottom:'50px',padding:'10px'}}>
+      <Box  style={{background:'#002B5B',marginLeft:'20px',marginBottom:'50px',padding:'10px'}}>
         <h2>Working expirience</h2>
-        <Grid item xs={12}>
+        <Box >
           <h3>Jobs</h3>
           <Timeline>
               <WorkExpirienceTimelineItem fromTo='2020-present' companyName='Teletrader doo.' technologies='.NET, React' position='Software Developer' icon={<LaptopIcon/>} />
           </Timeline>
-        </Grid>
-        <Grid item xs={12}>
+        </Box>
+        <Box >
           <h3>Faculty</h3>
           <Timeline>
               <WorkExpirienceTimelineItem fromTo='2019' companyName='Faculty of organizational science - Universty of Belgrade' technologies='' position='Undergradute teaching assistent' icon={<CoPresentIcon/>} />
               <WorkExpirienceTimelineItem fromTo='2018' companyName='Faculty of organizational science - Universty of Belgrade' technologies='Exam preparation' position='Lecturer' icon={<Diversity3Icon/>} />
               <WorkExpirienceTimelineItem fromTo='2018' companyName='Faculty of organizational science - Universty of Belgrade' technologies='' position='Student Mentor' icon={<QuizIcon/>} />
              </Timeline>
-        </Grid>
-        <Grid item xs={12}>
+        </Box>
+        <Box >
           <h3>FONIS (students organization on Faculty of organizational science - Universty of Belgrade)</h3>
           <Timeline>
               <WorkExpirienceTimelineItem fromTo='2019' companyName='FONIS' technologies='High School Hackaton' position='Coordinator' icon={<LanIcon/>} />
               <WorkExpirienceTimelineItem fromTo='2018' companyName='FONIS' technologies='FON Hackaton' position='PR Team Member' icon={<Diversity3Icon/>} />
               <WorkExpirienceTimelineItem fromTo='2018' companyName='FONIS' technologies='' position='Team Member' icon={<GroupsIcon/>} />
           </Timeline>
-        </Grid>
+        </Box>
         
-      </Grid>
-      <Grid item xs={6} style={{background:'#002B5B',marginRight:'20px',marginLeft:'5px',padding:'10px'}}> <h3>
-                  Skills
-              </h3>
-          <Grid >
-              <SkillsAcordion skillGrupation='Programming Languages' skillList={['C#','JavaScript','Typescript','Python']} icon={<TerminalIcon/>}/>
-              <SkillsAcordion skillGrupation='Frameworks' skillList={['.NET','ASP.NET','React','Material-UI','Blazor']} icon={<FoundationIcon/>}/>
-              <SkillsAcordion skillGrupation='Databases' skillList={['SQL','MS SQL','RethinkDB','Redis']} icon={<StorageIcon/>}/>
-              <SkillsAcordion skillGrupation='Methodologies' skillList={['UML','Swagger','OpenAPI','JWT','gRPC','Rest','GraphQL','Microservices','Onion Architecture']} icon={<AccountTreeIcon/>}/>
-              <SkillsAcordion skillGrupation='Semi-structured data' skillList={['JSON','XML','Protobuffer','Flatbuffer']} icon={<InventoryIcon/>}/>
-              <SkillsAcordion skillGrupation='Tools' skillList={['Git','Visual Studio','Visual Studio Code','MobaXTerm','WinSCP','Total Commander','Jira','Confluence','Git Bash']} icon={<ConstructionIcon/>}/>
-              <SkillsAcordion skillGrupation='.NET Librires' skillList={['Automapper','MediatR','NLog','Serilog','SignalR','Entityframework','Dapper','NBomber','Radzen','HtmlAgilityPack','Excel-DNA','PdfSharp']} icon={<LibraryBooksIcon/>}/>
-              <SkillsAcordion skillGrupation='React Packages' skillList={['Router Dom','Yup','Redux','Axios','Loadsh']} icon={<InventoryIcon/>}/>
-              <SkillsAcordion skillGrupation='ML assets' skillList={['Jupyter','ARIMA','Backtesting','Time Series']} icon={<SmartToyIcon/>}/>
-          </Grid>
-      </Grid>
+      </Box>
+    
+    <Box  style={{background:'#002B5B',marginRight:'20px',marginLeft:'5px',padding:'10px',width:'100%'}}> <h3>
+                Skills
+            </h3>
+        <Box >
+            <SkillsAcordion skillGrupation='Programming Languages' skillList={['C#','JavaScript','Typescript','Python']} icon={<TerminalIcon/>}/>
+            <SkillsAcordion skillGrupation='Frameworks' skillList={['.NET','ASP.NET','React','Material-UI','Blazor']} icon={<FoundationIcon/>}/>
+            <SkillsAcordion skillGrupation='Databases' skillList={['SQL','MS SQL','RethinkDB','Redis']} icon={<StorageIcon/>}/>
+            <SkillsAcordion skillGrupation='Methodologies' skillList={['UML','Swagger','OpenAPI','JWT','gRPC','Rest','GraphQL','Microservices','Onion Architecture']} icon={<AccountTreeIcon/>}/>
+            <SkillsAcordion skillGrupation='Semi-structured data' skillList={['JSON','XML','Protobuffer','Flatbuffer']} icon={<InventoryIcon/>}/>
+            <SkillsAcordion skillGrupation='Tools' skillList={['Git','Visual Studio','Visual Studio Code','MobaXTerm','WinSCP','Total Commander','Jira','Confluence','Git Bash']} icon={<ConstructionIcon/>}/>
+            <SkillsAcordion skillGrupation='.NET Librires' skillList={['Automapper','MediatR','NLog','Serilog','SignalR','Entityframework','Dapper','NBomber','Radzen','HtmlAgilityPack','Excel-DNA','PdfSharp']} icon={<LibraryBooksIcon/>}/>
+            <SkillsAcordion skillGrupation='React Packages' skillList={['Router Dom','Yup','Redux','Axios','Loadsh']} icon={<InventoryIcon/>}/>
+            <SkillsAcordion skillGrupation='ML assets' skillList={['Jupyter','ARIMA','Backtesting','Time Series']} icon={<SmartToyIcon/>}/>
+        </Box>
+    </Box>
   </Grid>
 </Grid>
+
     );
   }

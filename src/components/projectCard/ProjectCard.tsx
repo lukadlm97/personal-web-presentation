@@ -34,7 +34,18 @@ interface ProjectCardContent{
           return '#D6EFED';
       }
     }
-
+    function getLabel(type:ProjectTechnologiesType){
+      switch(type){
+        case ProjectTechnologiesType.Backend:
+          return 'Backend';
+          case ProjectTechnologiesType.Frontend:
+          return 'Frontend';
+          case ProjectTechnologiesType.ML:
+          return 'Machine Learning';
+          case ProjectTechnologiesType.FullStack:
+          return 'Full stack';
+      }
+    }
 
 
 
@@ -48,16 +59,16 @@ interface ProjectCardContent{
           <React.Fragment>
               <CardContent>
                   <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                  Word of the Day
+                    {getLabel(props.type)}
                   </Typography>
                   <Typography variant="h5" component="div">
-                      {props.projectName}
+                    {props.projectName}
                   </Typography>
                   <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom >
                     {props.technologies}
                   </Typography>
-                  <Typography variant="body2">
-                  {props.description}
+                  <Typography variant="body2" style={{textAlign:'justify'}}>
+                    {props.description}
                   </Typography>
               </CardContent>
               <CardActions>
