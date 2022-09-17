@@ -5,7 +5,6 @@ import SkillsAcordion from '../../components/skills/SkillsAcordion';
 import { makeStyles } from "@material-ui/core/styles";
 import Timeline from '@material-ui/lab/Timeline';
 import WorkExpirienceTimelineItem from '../../components/timelineItem/WorkExpirienceTimelineItem'
-import Typography from '@mui/material/Typography';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import CoPresentIcon from '@mui/icons-material/CoPresent';
 import QuizIcon from '@mui/icons-material/Quiz';

@@ -16,6 +16,7 @@ import CloseIcon from '@mui/icons-material/Close'
 import HomeIcon from '@mui/icons-material/Home';
 import SportsHandballIcon from '@mui/icons-material/SportsHandball';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import GradeIcon from '@mui/icons-material/Grade';
 import { makeStyles,withStyles  } from "@material-ui/core/styles";
 
 import './sidebar.css'
@@ -32,14 +33,16 @@ interface SidebarProps{
 const useStyles = makeStyles({
   list: {
     width: 250,
-    color:"#8FE3CF"
+    color:"#8FE3CF",
+     fontFamily:'Montserrat, serif'
   },
   fullList: {
     width: "auto"
   },
   paper: {
     background: "#002B5B",
-    padding:'5px'
+    padding:'5px',
+    fontFamily:'Montserrat, serif'
   }
 });
 
@@ -96,46 +99,54 @@ const Sidebar=(props:SidebarProps) =>{
 
             <Drawer anchor="left" open={drawerState} onClose={onDrawerClose} 
         classes={{ paper: classes.paper }}>
-                    <CloseIcon onClick={onDrawerClose} classes={classes.list} style={{ color: '#8FE3CF' }}/>
-                <List className={classes.list}>
-                    <ListItem key='home' disablePadding >
+                    <CloseIcon onClick={onDrawerClose} classes={classes.list} style={{ color: '#8FE3CF'}}/>
+                <List className={classes.list} >
+                    <ListItem key='home'  style={{fontFamily:'Montserrat, serif'}} disablePadding >
                         <ListItemButton onClick={()=>onMenuItemClick('home')}>
                         <ListItemIcon>
                              <HomeIcon style={{ color: '#8FE3CF' }}/> 
                         </ListItemIcon>
-                        <ListItemText primary='Home' />
+                        <ListItemText  primary='Home' style={{fontFamily:'Montserrat, serif'}}/>
                         </ListItemButton>
                     </ListItem> 
-                    <ListItem key='biography' disablePadding>
+                    <ListItem key='biography'  style={{fontFamily:'Montserrat, serif'}} disablePadding>
                         <ListItemButton onClick={()=>onMenuItemClick('biography')}>
                         <ListItemIcon>
                             <PersonSearchIcon style={{ color: '#8FE3CF' }}/>
                         </ListItemIcon>
-                        <ListItemText primary='Biography' />
+                        <ListItemText primary='Biography' style={{fontFamily:'Montserrat, serif'}}/>
                         </ListItemButton>
                     </ListItem>
-                    <ListItem key='expirience' disablePadding>
+                    <ListItem key='expirience' style={{fontFamily:'Montserrat, serif'}} disablePadding>
                         <ListItemButton onClick={()=>onMenuItemClick('expirience')}>
                         <ListItemIcon>
                             <WorkHistoryIcon style={{ color: '#8FE3CF' }}/>
                         </ListItemIcon>
-                        <ListItemText primary='Expirience' />
+                        <ListItemText primary='Expirience' style={{fontFamily:'Montserrat, serif'}}/>
                         </ListItemButton>
                     </ListItem>
-                    <ListItem key='projects' disablePadding>
+                    <ListItem key='projects'  style={{fontFamily:'Montserrat, serif'}} disablePadding>
                         <ListItemButton onClick={()=>onMenuItemClick('projects')}>
                         <ListItemIcon>
                             <AssignmentIcon style={{ color: '#8FE3CF' }}/>
                         </ListItemIcon>
-                        <ListItemText primary='Projects' />
+                        <ListItemText primary='Projects' style={{fontFamily:'Montserrat, serif'}}/>
                         </ListItemButton>
                     </ListItem>
-                    <ListItem key='hobbies' disablePadding>
+                    <ListItem key='hobbies'  style={{fontFamily:'Montserrat, serif'}} disablePadding>
                         <ListItemButton onClick={()=>onMenuItemClick('hobbies')}>
                         <ListItemIcon>
                             <SportsHandballIcon style={{ color: '#8FE3CF' }}/>
                         </ListItemIcon>
-                        <ListItemText primary='Hobbies' />
+                        <ListItemText primary='Hobbies' style={{fontFamily:'Montserrat, serif'}} />
+                        </ListItemButton>
+                    </ListItem> 
+                     <ListItem key='recommendations'  style={{fontFamily:'Montserrat, serif'}} disablePadding>
+                        <ListItemButton onClick={()=>onMenuItemClick('recommendations')}>
+                        <ListItemIcon>
+                            <GradeIcon style={{ color: '#8FE3CF' }}/>
+                        </ListItemIcon>
+                        <ListItemText primary='Recommendations'  style={{fontFamily:'Montserrat, serif'}}/>
                         </ListItemButton>
                     </ListItem>
                 </List>

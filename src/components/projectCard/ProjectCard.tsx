@@ -7,7 +7,6 @@ import Typography from '@mui/material/Typography';
 import Github from '@mui/icons-material/GitHub';
 import {ProjectTechnologiesType} from '../../types/ProjectType'
 
-import { useNavigate } from "react-router-dom";
 
 interface ProjectCardContent{
     projectName:string;
