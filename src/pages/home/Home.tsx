@@ -38,55 +38,56 @@ function Home(){
     return (
         <Grid className={style.body}>
             <h1>Home page</h1>
-            <Box  sx={{ minWidth: 275,width:400 }} style={{margin:'5px',padding:'5px',background:'#002B5B'}}>
-              <h4>
-                Hi, I'm Luka Radovanovic, and this is my personal web presentation.    
-              </h4>
-            </Box>
-            <Box  sx={{ minWidth: 275,width:400 }} style={{margin:'5px',padding:'5px',background:'#002B5B',}}>
-              <Typography style={{fontFamily:'Montserrat, serif',fontWeight:'bold'}}>
-                Meet me
-              </Typography>
-              <Box >
-                
-                <Button size="small"  style={{background:'#446145',color:'#8FE3CF',padding:'5px',margin:'5px'}} onClick={()=>onMenuItemClick('biography')}>
-                    <PersonSearchIcon/>
-                    <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
-                      Biography 
-                    </Typography>
-                </Button>
-                <Button size="small"  style={{background:'#6c7a6c',color:'#8FE3CF',padding:'5px',margin:'5px'}} onClick={()=>onMenuItemClick('expirience')}>
-                    <WorkHistoryIcon/>
-                    <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
-                    Expirience
-                    </Typography>
-           
-                </Button>
-                <Button size="small"  style={{background:'#215921',color:'#8FE3CF',padding:'5px',margin:'5px'}} onClick={()=>onMenuItemClick('projects')}>
-                    <AssignmentIcon/>
-                    <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
-                    Projects
-                    </Typography>
-           
-                </Button>
-                <Button size="small"  style={{background:'#4a574a',color:'#8FE3CF',padding:'5px',margin:'5px'}} onClick={()=>onMenuItemClick('hobbies')}>
-                    <SportsHandballIcon/>
-                    <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
-                      Hobbies
-                    </Typography>
-           
-                </Button>
-                <Button size="small"  style={{background:'#1e381e',color:'#8FE3CF',padding:'5px',margin:'5px'}} onClick={()=>onMenuItemClick('recommendations')}>
-                    <GradeIcon/>
-                    <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
-                      Recommendations
-                    </Typography>
-           
-                </Button>
+            <Grid  container item xs={12} style={{margin:'2px',justifyContent: 'center',fontFamily:'Montserrat, serif'}}  spacing={3}>
+              <Box sx={{ minWidth: 275,width:400 }} style={{margin:'5px',padding:'5px',background:'#002B5B'}}>
+                <h4>
+                  Hi, I'm Luka Radovanovic, and this is my personal web presentation.    
+                </h4>
               </Box>
-            </Box>
+              <Box  sx={{ minWidth: 275,width:400 }} style={{margin:'5px',padding:'5px',background:'#002B5B',}}>
+                <Typography style={{fontFamily:'Montserrat, serif',fontWeight:'bold'}}>
+                  Meet me
+                </Typography>
+                <Box >
+                  
+                  <Button size="small"  style={{background:'#446145',color:'#8FE3CF',padding:'5px',margin:'5px'}} onClick={()=>onMenuItemClick('biography')}>
+                      <PersonSearchIcon/>
+                      <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
+                        Biography 
+                      </Typography>
+                  </Button>
+                  <Button size="small"  style={{background:'#6c7a6c',color:'#8FE3CF',padding:'5px',margin:'5px'}} onClick={()=>onMenuItemClick('expirience')}>
+                      <WorkHistoryIcon/>
+                      <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
+                      Expirience
+                      </Typography>
+            
+                  </Button>
+                  <Button size="small"  style={{background:'#215921',color:'#8FE3CF',padding:'5px',margin:'5px'}} onClick={()=>onMenuItemClick('projects')}>
+                      <AssignmentIcon/>
+                      <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
+                      Projects
+                      </Typography>
+            
+                  </Button>
+                  <Button size="small"  style={{background:'#4a574a',color:'#8FE3CF',padding:'5px',margin:'5px'}} onClick={()=>onMenuItemClick('hobbies')}>
+                      <SportsHandballIcon/>
+                      <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
+                        Hobbies
+                      </Typography>
+            
+                  </Button>
+                  <Button size="small"  style={{background:'#1e381e',color:'#8FE3CF',padding:'5px',margin:'5px'}} onClick={()=>onMenuItemClick('recommendations')}>
+                      <GradeIcon/>
+                      <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
+                        Recommendations
+                      </Typography>
+            
+                  </Button>
+                </Box>
+              </Box>
            
-           
+           </Grid>
         </Grid>
     )
 }
