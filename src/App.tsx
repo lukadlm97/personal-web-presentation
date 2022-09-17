@@ -10,7 +10,8 @@ import AppBar from './components/appBar/AppBar'
 import SideBar from './components/sideBar/SideBar'
 import Footer from './components/footer/Footer'
 
-
+/*
+}}
 //create material UI theme 
 const theme = createTheme({
   palette: {
@@ -30,14 +31,14 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Poppins, sans- serif',
+    fontFamily: 'Montserrat, serif',
     fontWeightBold: 700,
     fontWeightMedium: 600,
     fontWeightRegular: 400,
     htmlFontSize: 20,
   },
-
-})
+  }
+)*/
 
 
 const useStyles = makeStyles({
@@ -47,8 +48,10 @@ const useStyles = makeStyles({
       background: "#2B4865", 
     textAlign: 'center',
       flexFlow: "column",
+      fontFamily:'Montserrat, serif'
   },
   appBar:{
+    fontFamily:'Montserrat, serif'
   }
 });
 
@@ -63,7 +66,7 @@ function App() {
     }
 
   return (
-  <ThemeProvider theme={theme}>
+ // <ThemeProvider theme={theme}>
     <div className={style.appBar}>
       <AppBar drawerState={drawerState} onClick={handleDrawerState}/>
       <SideBar drawerState={drawerState} onClick={handleDrawerState}/>
@@ -72,7 +75,7 @@ function App() {
         <Navigator/>
       </div>
     </div>
-  </ThemeProvider>
+//  </ThemeProvider>
      
   );
 }

@@ -1,12 +1,13 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Github from '@mui/icons-material/GitHub';
 import {ProjectTechnologiesType} from '../../types/ProjectType'
 
+import { useNavigate } from "react-router-dom";
 
 interface ProjectCardContent{
     projectName:string;
@@ -19,19 +20,18 @@ interface ProjectCardContent{
 
   export default function ProjectCard(props:ProjectCardContent) {
 
-
-
-
     function getColor(type:ProjectTechnologiesType){
       switch(type){
         case ProjectTechnologiesType.Backend:
-          return '#898AA6';
+          return '#5D7D38';
           case ProjectTechnologiesType.Frontend:
-          return '#C9BBCF';
+          return '#84E61F';
           case ProjectTechnologiesType.ML:
-          return '#B7D3DF';
+          return '#45819F';
           case ProjectTechnologiesType.FullStack:
-          return '#D6EFED';
+          return '#93FB95';
+          case ProjectTechnologiesType.MyData:
+            return '#3D8361';
       }
     }
     function getLabel(type:ProjectTechnologiesType){
@@ -43,18 +43,13 @@ interface ProjectCardContent{
           case ProjectTechnologiesType.ML:
           return 'Machine Learning';
           case ProjectTechnologiesType.FullStack:
-          return 'Full stack';
+          return 'Full Stack'; 
+            case ProjectTechnologiesType.MyData:
+          return 'Raw Data';
       }
     }
-
-
-
-
-
-
-
     return (
-      <Box sx={{ minWidth: 275,width:400 }} style={{margin:'5px',padding:'5px',background:'#8FE3CF'}}>
+      <Box sx={{ minWidth: 275,width:400 }} style={{margin:'5px',padding:'5px',background:'#002B5B'}}>
         <Card variant="outlined" style={{background:getColor(props.type)}}>
           <React.Fragment>
               <CardContent>
@@ -71,11 +66,20 @@ interface ProjectCardContent{
                     {props.description}
                   </Typography>
               </CardContent>
-              <CardActions>
-                  <Button size="small">Learn More</Button>
-              </CardActions>
+            
           </React.Fragment>
-        </Card>
+      
+        </Card>   
+        <Box style={{margin:'5px',alignItems:'right'}} display="flex" justifyContent="flex-end" alignItems="flex-end">
+          <Button size="small"  style={{background:'#256D85',color:'#8FE3CF'}} onClick={()=>window.open(props.url)}>
+              <Github/>
+              <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
+              Git
+              </Typography>
+           
+          </Button>
+        </Box>
+       
       </Box>
     );
   }

@@ -9,11 +9,12 @@ import EducationTimelineItem from '../../components/timelineItem/EducationTimeli
 
 const useStyles = makeStyles({
     body: {
-      width: "auto",
-      color:"#8FE3CF",
-      background: "#2B4865", 
-      
-      flexFlow: "column"
+        width: "auto",
+        color:"#8FE3CF",
+        background: "#2B4865", 
+        display: "flex",
+        flexFlow: "column",
+        height: "100vh"
     }
   });
 
@@ -24,9 +25,11 @@ export default function Biography() {
         return (
             <Grid container className={style.body} >
                 <h1> Biography Page</h1>
-                <Box style={{display:'flex'}}>
-                    <Box style={{background:'#002B5B',marginLeft:'20px',marginBottom:'50px',padding:'10px'}}>
+                <Grid  container item xs={12} style={{display:'flex',margin:'2px',justifyContent: 'center'}}  spacing={3}>
+                    <Box  sx={{ minWidth: 275,width:400 }} style={{margin:'5px',padding:'5px',background:'#002B5B'}}>
                         <h3>Education</h3>
+                        <Box>
+                            
                         <Timeline>
                             <EducationTimelineItem fromTo='2004-2008' schoolType='Primary school' schoolName='OS Dimitrije Tucovic - Mali Borak' level={null} domain={null} />
                             <EducationTimelineItem fromTo='2008-2012' schoolType='Primary school' schoolName='OS Mile Dubljevic - Lajkovac' level={null} domain={null} />
@@ -38,22 +41,9 @@ export default function Biography() {
                                 level='Master of Science (10.0/10.0)' domain='Information systems'/>
                 
                         </Timeline>
-                    </Box>
-                    <Box style={{background:'#002B5B',marginRight:'20px',marginLeft:'5px',padding:'10px'}}>
-                        <Box >
-                            <h3>
-                                Details
-                            </h3>
-                            <Typography variant="h6" gutterBottom style={{color:'#8FE3CF'}}> Primary school </Typography>
-                            <Typography variant="body1" gutterBottom style={{textAlign:'justify'}}>
-                                body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-                                blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur,
-                                neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum
-                                quasi quidem quibusdam.
-                            </Typography>
                         </Box>
                     </Box>
-                </Box>
+                </Grid>
             </Grid>
         );
       }

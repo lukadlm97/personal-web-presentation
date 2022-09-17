@@ -26,6 +26,8 @@ export default function WorkExpirienceTimelineItem(props:Content){
             align="right"
             variant="body2"
             color="text.secondary"
+            
+    fontFamily='Montserrat, serif'
             style={{ color: '#8FE3CF',flex:0.3 }}
         >
             {props.fromTo}
@@ -37,14 +39,14 @@ export default function WorkExpirienceTimelineItem(props:Content){
             </TimelineDot>
             <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h6" component="span">
+        <TimelineContent sx={{ py: '12px', px: 2 }} fontFamily='Montserrat, serif'>
+            <Typography variant="h6" component="span" fontFamily='Montserrat, serif'>
             {props.position}
             </Typography>
-            <Typography>
+            <Typography fontFamily='Montserrat, serif'>
             {props.companyName}
             </Typography>
-            <Typography>
+            <Typography fontFamily='Montserrat, serif'>
             {props.technologies}
             </Typography>
         </TimelineContent>

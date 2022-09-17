@@ -28,6 +28,7 @@ export default function EducationTimelineItem(props:Content){
             variant="body2"
             color="text.secondary"
             style={{ color: '#8FE3CF',flex:0.3 }}
+            fontFamily='Montserrat, serif'
         >
             {props.fromTo}
         </TimelineOppositeContent>
@@ -39,19 +40,19 @@ export default function EducationTimelineItem(props:Content){
             <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h6" component="span">
+            <Typography variant="h6" component="span" fontFamily='Montserrat, serif'>
             {props.schoolType}
             </Typography>
-            <Typography>
+            <Typography fontFamily='Montserrat, serif'>
             {props.schoolName}
             </Typography>
            {props.domain &&
-            <Typography>
+            <Typography fontFamily='Montserrat, serif'>
             {props.domain}
             </Typography>
            }
             {props.level &&
-            <Typography>
+            <Typography fontFamily='Montserrat, serif'> 
             {props.level}
             </Typography>
            }

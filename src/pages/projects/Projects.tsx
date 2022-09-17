@@ -52,9 +52,27 @@ function Projects(){
         description:"In this project, i wanna learn React and technologies suranded by this library. Domain is Formula 1 and similar open-wheel competioton. Application should display drivers, constructors and their drivers, technical staff, competiton result, rankings and in feature some predictions for different drivers and constructors.",
         title:"F1 application (front-end)",
         technologies:'React, Typescript, Redux, Material-UI, SCSS',
-        url:"https://www.google.com/",
+        url:"https://github.com/lukadlm97/f1-web-app",
         type:ProjectTechnologiesType.Frontend
       } as ProjectType,
+      {
+        id:5,
+        description:"Discovering the potential of prediction behaviour of time-series mentored by course from the Udemy. ",
+        title:"Time Series Analyse",
+        technologies:'Python, Jupyter, ARIMA, Numpy, Pandas',
+        url:"https://github.com/lukadlm97/time-series-analyse/blob/main/stock_market_predictions/stock%20market%20predictions.ipynb",
+        type:ProjectTechnologiesType.ML
+      } as ProjectType,
+      {
+        id:6,
+        description:"Project with contains detailed information about f1 races and qualificatons for last and current season. (Updated after Hungaroring)) ",
+        title:"F1 FIA Official Data",
+        technologies:'Excel',
+        url:"https://github.com/lukadlm97/f1-fia-official-data",
+        type:ProjectTechnologiesType.MyData
+      } as ProjectType,
+
+
 
     ] as ProjectType[];
 
@@ -63,7 +81,8 @@ function Projects(){
 
         <Grid container className={style.body}>
            <h1>Projects Page</h1> 
-           <Grid  container item xs={12} style={{display:'flex',margin:'5px',padding:'5px',justifyContent: 'center'}}  spacing={3} >
+           <Grid  container item xs={12} style={{display:'flex',margin:'5px',padding:'5px',justifyContent: 'center',
+    fontFamily:'Montserrat, serif'}}  spacing={3} >
               {projectState.map((item)=>(
                   <ProjectCard projectName={item.title} description={item.description} technologies={item.technologies} url={item.url} type={item.type}/>
               ))}

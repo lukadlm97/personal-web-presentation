@@ -11,6 +11,8 @@ export type ProjectType={
     Frontend,
     Backend,
     ML,
-    FullStack
+    FullStack,
+    MyData,
+    Algos
   }
 
