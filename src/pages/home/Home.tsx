@@ -21,8 +21,7 @@ const useStyles = makeStyles({
       color:"#8FE3CF",
       background: "#2B4865", 
       display: "flex",
-      flexFlow: "column",
-      height: "100vh"
+      flexFlow: "column"
     }
   });
   
@@ -87,6 +86,14 @@ function Home(){
                 </Box>
               </Box>
            
+           </Grid>
+           <Grid  container item xs={12} style={{margin:'2px',justifyContent: 'center',fontFamily:'Montserrat, serif'}}  spacing={3}>  
+            <Box>
+              <h1>Recommendations</h1>
+              <Box sx={{ minWidth: 275,width:400 }} style={{margin:'5px',padding:'5px',background:'#002B5B'}}>
+               
+              </Box>
+            </Box>
            </Grid>
         </Grid>
     )

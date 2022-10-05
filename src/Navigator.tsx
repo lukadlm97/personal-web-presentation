@@ -7,6 +7,7 @@ import Projects from './pages/projects/Projects'
 import NotFound from './pages/notFound/notFound'
 import ExpirienceTimeline from './pages/expirience/Expirience'
 import Biography from './pages/biography/Biography'
+import Recommendation from './pages/recommendations/Recommendation'
 
 
 function Navigator(){
@@ -17,6 +18,7 @@ function Navigator(){
             <Route path='/projects' element={<Projects />} />
             <Route path='/expirience' element={<ExpirienceTimeline />} />
             <Route path='/biography' element={<Biography />} />
+            <Route path='/recommendations' element={<Recommendation />} />
             <Route path='*' element={<NotFound />} />
         </Routes>
     )
