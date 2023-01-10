@@ -23,27 +23,26 @@ interface IRecommendationRecord
     worldList:SingleRecommendationItem[];
 }
 
-interface ISingleRecord{
-    id:number;
-    name:string;
-    star:number;
-    author:string;
-}
-
   export default function RecommendationItem(props:IRecommendationRecord) {
       const style=useStyles();
       
           return (
-              <Box sx={{ minWidth: 275,width:400 }} style={{margin:'5px',padding:'5px',background:'#002B5B'}}>
-                  <h3>{props.categoryName}</h3>
-                  <Box  style={{display:'flex',margin:'2px',justifyContent: 'center'}}  >
-                    <Box >
-                        <BasicTable arrayOfItems={props.homeMadeList}/>
-                    </Box>
-                    <Box >
-                        <BasicTable arrayOfItems={props.worldList}/>
-                    </Box>
-                </Box>
-              </Box>
+             
+            <div>
+                <h3>{props.categoryName}</h3>
+                <div style={{flexGrow: 1}}>
+                    <Grid container spacing={3} style={{background:"#002B5B",padding:'5px'}}>
+                        <Grid item  xs={12} sm={6} >
+                            <BasicTable arrayOfItems={props.homeMadeList} listName={"Homemade list"}/>
+                        </Grid>
+                        <Grid item  xs={12} sm={6} >
+                            <BasicTable listName={"Planetar list"} arrayOfItems={props.worldList}/>
+                        </Grid>
+                    </Grid> 
+                  </div>
+                  <div style={{flexGrow: 1}}>
+                 </div>
+            </div>
+         
           );
         }

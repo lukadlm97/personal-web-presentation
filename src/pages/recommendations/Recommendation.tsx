@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Grid from '@material-ui/core/Grid'
+import Paper from  '@material-ui/core/Paper'
 import Box from '@material-ui/core/Box'
 import { makeStyles } from "@material-ui/core/styles";
 import {RecommendationsType,SingleRecommendationItem}  from '../../types/RecommendationsType'
@@ -42,7 +43,12 @@ const useStyles = makeStyles({
               name:"Munje",
               star:5,
               author:"Radivoj Andric"
-          } as SingleRecommendationItem],
+          } as SingleRecommendationItem,{
+            id:2,
+            name:"Munje",
+            star:2,
+            author:"Radivoj Andric"
+        } as SingleRecommendationItem],
           globalList:[{
               id:1,
               name:"La vita è bella",
@@ -55,14 +61,52 @@ const useStyles = makeStyles({
 
   ] as RecommendationsType[];
 
+ 
   
 export default function Recommendation() {
-    const style=useStyles();
-    
+    const style1=useStyles();
+    const classes1 = {
+      root: {
+        flexGrow: 1
+      },
+      paper: {
+        padding: 20,
+        textAlign: "center",
+        color: "blue",
+        fontFamily: "Roboto"
+      }
+    };
         return (
-            <Grid container className={style.body} >
-                <h1> Recommendation Page</h1>
-                <Grid  container item xs={12} style={{display:'flex',margin:'2px',justifyContent: 'center'}}  spacing={3}>
+          <div style={{flexGrow: 1}}>  <h1>
+          Recommendations page
+        </h1>
+            <Grid container spacing={3} style={{background:"#002B5B",padding:'5px'}}>
+            
+            {recommendationsState.map((item)=>(
+                 <Grid container item xs={12} sm={6}>
+                    <RecommendationItem categoryName={item.title}
+                    homeMadeList={item.homeMadeList} 
+                    simpleDescription={item.description}
+                    worldList={item.globalList}
+                    isTableOriented={true}
+                    key={item.id} />
+                    
+                 </Grid>))
+              }
+
+           
+                  
+              </Grid>
+             
+              
+              
+            </div>
+        );
+        }
+
+{/*
+
+ <Grid  container item xs={12} style={{display:'flex',margin:'2px',justifyContent: 'center'}}  spacing={3}>
                 {recommendationsState.map((item)=>(
                   <RecommendationItem 
                   categoryName={item.title}
@@ -72,8 +116,4 @@ export default function Recommendation() {
                   homeMadeList={item.homeMadeList}
                   worldList={item.globalList}
                   />
-              ))}
-                </Grid>
-            </Grid>
-        );
-      }
+                */}
