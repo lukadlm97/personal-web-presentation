@@ -71,7 +71,6 @@ function App() {
       <AppBar drawerState={drawerState} onClick={handleDrawerState}/>
       <SideBar drawerState={drawerState} onClick={handleDrawerState}/>
       <div className={style.body}>
-
         <Navigator/>
       </div>
     </div>

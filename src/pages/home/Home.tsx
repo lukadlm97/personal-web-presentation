@@ -35,20 +35,17 @@ function Home(){
   }
 
     return (
-        <Grid className={style.body}>
+      <div style={{flexGrow: 1}}>
             <h1>Home page</h1>
-            <Grid  container item xs={12} style={{margin:'2px',justifyContent: 'center',fontFamily:'Montserrat, serif'}}  spacing={3}>
-              <Box sx={{ minWidth: 275,width:400 }} style={{margin:'5px',padding:'5px',background:'#002B5B'}}>
+            <Grid container spacing={3} style={{padding:'25px'}}>
+              <Grid container item xs={12} sm={6} style={{background:"#002B5B",margin:'15px'}}>
                 <h4>
                   Hi, I'm Luka Radovanovic, and this is my personal web presentation.    
                 </h4>
-              </Box>
-              <Box  sx={{ minWidth: 275,width:400 }} style={{margin:'5px',padding:'5px',background:'#002B5B',}}>
-                <Typography style={{fontFamily:'Montserrat, serif',fontWeight:'bold'}}>
-                  Meet me
-                </Typography>
-                <Box >
-                  
+              
+                
+              </Grid> 
+                <Grid container item xs={12} sm={5} style={{background:"#002B5B",margin:'15px'}}>
                   <Button size="small"  style={{background:'#446145',color:'#8FE3CF',padding:'5px',margin:'5px'}} onClick={()=>onMenuItemClick('biography')}>
                       <PersonSearchIcon/>
                       <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
@@ -83,19 +80,9 @@ function Home(){
                       </Typography>
             
                   </Button>
-                </Box>
-              </Box>
-           
+               </Grid> 
            </Grid>
-           <Grid  container item xs={12} style={{margin:'2px',justifyContent: 'center',fontFamily:'Montserrat, serif'}}  spacing={3}>  
-            <Box>
-              <h1>Recommendations</h1>
-              <Box sx={{ minWidth: 275,width:400 }} style={{margin:'5px',padding:'5px',background:'#002B5B'}}>
-               
-              </Box>
-            </Box>
-           </Grid>
-        </Grid>
+        </div>
     )
 }
 

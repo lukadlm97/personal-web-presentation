@@ -77,9 +77,10 @@ export default function Recommendation() {
       }
     };
         return (
-          <div style={{flexGrow: 1}}>  <h1>
+          <div style={{flexGrow: 1}}>  
+          <h1>
           Recommendations page
-        </h1>
+          </h1>
             <Grid container spacing={3} style={{background:"#002B5B",padding:'5px'}}>
             
             {recommendationsState.map((item)=>(
