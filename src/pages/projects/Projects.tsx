@@ -78,25 +78,16 @@ function Projects(){
 
 
     return(
-
-        <Grid container className={style.body}>
+        <div style={{flexGrow: 1}}>  
            <h1>Projects Page</h1> 
-           <Grid  container item xs={12} style={{display:'flex',margin:'5px',padding:'5px',justifyContent: 'center',
-    fontFamily:'Montserrat, serif'}}  spacing={3} >
+           <Grid container spacing={3} style={{padding:'15px',justifyContent:'center'}}>
               {projectState.map((item)=>(
+                <Grid container item xs={12} sm={3} style={{background:"#002B5B",margin:'5px'}}>
                   <ProjectCard projectName={item.title} description={item.description} technologies={item.technologies} url={item.url} type={item.type}/>
+                </Grid>
               ))}
           </Grid>
-
-              {/*
-              <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                {Array.from(Array(6)).map((_, index) => (
-                  <Grid item xs={2} sm={4} md={4} key={index}>
-                    <Item>xs=2</Item>
-                  </Grid>
-                ))}
-              </Grid>  */}
-        </Grid>
+        </div>
 
     )
 }

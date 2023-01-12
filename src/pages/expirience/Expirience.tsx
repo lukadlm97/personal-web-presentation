@@ -38,7 +38,7 @@ const style=useStyles();
     return (
     <div style={{flexGrow: 1}}> 
       <h1>Expirience Page</h1>
-      <Grid container spacing={3} style={{padding:'25px'}}>
+      <Grid container spacing={3} style={{padding:'25px',justifyContent:'center'}}>
         <Grid container item xs={12} sm={6} style={{background:"#002B5B",margin:'15px'}}>
           <div style={{flexGrow: 1}}>
             <h2>Working expirience</h2>
