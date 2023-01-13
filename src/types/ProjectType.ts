@@ -5,6 +5,7 @@ export type ProjectType={
     technologies:string;
     url:string;
     type:ProjectTechnologiesType;
+    image:string;
   }
 
   export enum ProjectTechnologiesType{
