@@ -86,10 +86,6 @@ const Home = () => {
                       </Typography>
             
                   </Button>
-                  <Paper className={classes.paper}>
-                    <img src={process.env.PUBLIC_URL+`/img/fit.jpg`} height='300px'
-                    width='350px' alt="Nice picture" />
-                  </Paper>
             </Paper>
           </Grid>
           <Grid item xs={12} sm={6}>

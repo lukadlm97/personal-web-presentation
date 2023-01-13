@@ -124,7 +124,7 @@ function Projects(){
                   description={item.description}
                   technologies={item.technologies}
                   notes="/"
-                  githubLink="https://github.com/username/my-project"
+                  githubLink={item.url}
                   image={item.image}
                   websiteLink=''
                 />

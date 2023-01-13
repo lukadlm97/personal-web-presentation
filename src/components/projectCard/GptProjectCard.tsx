@@ -61,13 +61,13 @@ export default function ProjectCard(project:ProjectCardContent) {
         <Typography gutterBottom variant="h5" component="h2">
           {project.title}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="body2"  component="p">
           {project.description}
         </Typography>
-        <Typography variant="body2" component="p">
+        <Typography variant="body2" component="h6" >
           Technologies used: {project.technologies}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="body2" component="p">
           Notes:{project.notes}
         </Typography>
         <div>
