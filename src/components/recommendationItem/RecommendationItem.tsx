@@ -28,9 +28,11 @@ interface IRecommendationRecord
       
           return (
              
-            <div>
-                <h3>{props.categoryName}</h3>
                 <div style={{flexGrow: 1}}>
+                    <h3>{props.categoryName}</h3>
+                    <p>
+                        {props.simpleDescription}
+                    </p>
                     <Grid container spacing={3} style={{background:"#002B5B",padding:'5px'}}>
                         <Grid item  xs={12} sm={6} >
                             <BasicTable arrayOfItems={props.homeMadeList} listName={"Homemade list"}/>
@@ -39,10 +41,7 @@ interface IRecommendationRecord
                             <BasicTable listName={"Planetar list"} arrayOfItems={props.worldList}/>
                         </Grid>
                     </Grid> 
-                  </div>
-                  <div style={{flexGrow: 1}}>
-                 </div>
-            </div>
+                </div>
          
           );
         }

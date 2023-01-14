@@ -6,8 +6,6 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import PersonSearchIcon from '@mui/icons-material/PersonSearch';
-import CloseIcon from '@mui/icons-material/Close'
-import HomeIcon from '@mui/icons-material/Home';
 import SportsHandballIcon from '@mui/icons-material/SportsHandball';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import GradeIcon from '@mui/icons-material/Grade';
@@ -47,7 +45,7 @@ const Home = () => {
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <Paper className={classes.header}>
-              <h1>Hi, I'm Luka</h1>
+              <h1>Hi, my name is Luka, and I don't live on the second floor.</h1>
             </Paper>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -91,29 +89,21 @@ const Home = () => {
           <Grid item xs={12} sm={6}>
             <Paper className={classes.paper}>
               <h2>ChatGPT says about me :)</h2>
-              <p>Meet Luka Radovanovic, a 25-year-old software developer based in Belgrade. Luka is passionate about his job and is always looking for new challenges to take on. He is a lover of technology, and is always investigating the latest and greatest developments in the field.
-                </p>
-<p>
-In his free time, Luka enjoys staying active and healthy by going for walks and working out. He also loves watching sports, with a particular passion for English Premier League soccer, F1 racing, and basketball. Luka is a big supporter of Red Star, and he also enjoys reading books, cooking, and looking for patterns in everyday life.
-</p>
-<p>
-As a software developer, Luka has a strong background in .NET and is constantly working to improve his skills and knowledge in this area. He is a problem solver by nature, and is always looking for ways to improve and optimize his work.
-</p>
-<p>
-Luka is a dedicated professional who is passionate about his job and is always looking for new ways to grow and improve. He is a great team player and is always willing to help others, making him a valuable asset to any team.</p>
-
+              <p>
+              Meet Luka Radovanovic, a 25-year-old software developer based in Belgrade. Luka is passionate about his job and is always looking for new challenges to take on. He is a lover of technology, and is always investigating the latest and greatest developments in the field.
+              </p>
+              <p>
+              In his free time, Luka enjoys staying active and healthy by going for walks and working out. He also loves watching sports, with a particular passion for English Premier League soccer, F1 racing, and basketball. Luka is a big supporter of Red Star, and he also enjoys reading books, cooking, and looking for patterns in everyday life.
+              </p>
+              <p>
+              As a software developer, Luka has a strong background in .NET and is constantly working to improve his skills and knowledge in this area. He is a problem solver by nature, and is always looking for ways to improve and optimize his work.
+              </p>
+              <p>
+              Luka is a dedicated professional who is passionate about his job and is always looking for new ways to grow and improve. He is a great team player and is always willing to help others, making him a valuable asset to any team.
+              </p>
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <Paper className={classes.paper}>
-              <img src="path/to/image" alt="Nice picture" />
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Paper className={classes.paper}>
-              <img src="path/to/image" alt="Nice picture" />
-            </Paper>
-          </Grid>
+        
         </Grid>
       </Container>
     </div>

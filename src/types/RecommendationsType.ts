@@ -12,4 +12,5 @@ export type SingleRecommendationItem={
     name:string;
     star:number;
     author:string;
+    imdburl:string;
 }
