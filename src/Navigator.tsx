@@ -8,7 +8,6 @@ import NotFound from './pages/notFound/notFound'
 import ExpirienceTimeline from './pages/expirience/Expirience'
 import Biography from './pages/biography/Biography'
 import Recommendation from './pages/recommendations/Recommendation'
-import Hobbies from './pages/hobby/Hobbies'
 
 
 function Navigator(){
@@ -20,7 +19,7 @@ function Navigator(){
             <Route path='/expirience' element={<ExpirienceTimeline />} />
             <Route path='/biography' element={<Biography />} />
             <Route path='/recommendations' element={<Recommendation />} />
-            <Route path='/hobbies' element={<Hobbies />} />
+            <Route path='/hobbies' element={<NotFound />} />
             <Route path='*' element={<NotFound />} />
         </Routes>
     )

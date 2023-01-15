@@ -58,7 +58,6 @@ export default function BasicTable(props:IListWrapper) {
           <TableRow>
             <TableCell style={{color:'#8FE3CF',fontSize:'16px'}} >Name</TableCell>
             <TableCell align="right"  style={{color:'#8FE3CF',fontSize:'16px'}}>Author</TableCell>
-            <TableCell align="right"  style={{color:'#8FE3CF',fontSize:'16px'}}>Stars</TableCell>
             <TableCell align="right"  style={{color:'#8FE3CF',fontSize:'16px'}}>Link</TableCell>
           </TableRow>
         </TableHead>
@@ -73,9 +72,6 @@ export default function BasicTable(props:IListWrapper) {
            </TableCell>
               <TableCell align="right" style={{color:'#8FE3CF'}}>
                 {row.author}
-              </TableCell>
-              <TableCell align="right" style={{color:'#8FE3CF'}}>
-                {row.star}/5
               </TableCell>
               <TableCell align="right" style={{color:'#8FE3CF',padding:'5px'}}>
               <Button
