@@ -59,7 +59,7 @@ const Home = () => {
                   <Button size="small"  style={{background:'#6c7a6c',color:'#8FE3CF',padding:'5px',margin:'5px'}} onClick={()=>onMenuItemClick('expirience')}>
                       <WorkHistoryIcon/>
                       <Typography  sx={{ fontSize: 14 }} style={{marginLeft:'5px'}}>
-                      Expirience
+                      Experience
                       </Typography>
             
                   </Button>
@@ -103,7 +103,6 @@ const Home = () => {
               </p>
             </Paper>
           </Grid>
-        
         </Grid>
       </Container>
     </div>

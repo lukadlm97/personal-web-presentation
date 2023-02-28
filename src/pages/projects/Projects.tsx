@@ -25,6 +25,15 @@ function Projects(){
     const projects = ['Project 1','Project 2','Project 3','Project 4','Project 5','Project 6','Project 7','Project 8'];
     const projectState=[
       {
+      id:10,
+      description:"The Ultimate Solution for Securing the Best Deals on Top-Quality Products and Services. This is a .NET-based system consisting of two GRPC services and an API gateway. The first GRPC service deals with account-related data and uses the MediatR library to process requests. It also sends notifications to a RabbitMQ message queue if any changes occur. The data is persisted using Entity Framework and MS SQL. ",
+      title:"OptiBid",
+      technologies:'.NET, Web API, gRPC, Entity Framework, MS SQL, PostgreSQL, RabbitMQ, MediatR, etc.',
+      url:"https://github.com/lukadlm97/opti-bid",
+      type:ProjectTechnologiesType.Backend,
+      image:process.env.PUBLIC_URL+`/img/opti-bid.png`
+    } as ProjectType,
+      {
         id:1,
         description:"An ASP.NET project, following the tutorial by Wes Doyle, that aims to demonstrate the powerful capabilities of Library Management System. This project is a web application that utilizes ASP.NET, Entity Framework for server-side implementation, and allows users to manage a library's resources, where users can search for books, check them out, and renew them. ",
         title:"Library managment system",

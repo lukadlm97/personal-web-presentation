@@ -4,7 +4,7 @@ import Box from '@material-ui/core/Box'
 import SkillsAcordion from '../../components/skills/SkillsAcordion';
 import { makeStyles } from "@material-ui/core/styles";
 import Timeline from '@material-ui/lab/Timeline';
-import WorkExpirienceTimelineItem from '../../components/timelineItem/WorkExpirienceTimelineItem'
+import WorkExperienceTimelineItem from '../../components/timelineItem/WorkExperienceTimelineItem'
 import LaptopIcon from '@mui/icons-material/Laptop';
 import CoPresentIcon from '@mui/icons-material/CoPresent';
 import QuizIcon from '@mui/icons-material/Quiz';
@@ -32,36 +32,36 @@ const useStyles = makeStyles({
     }
   });
 
-export default function ExpirienceTimeline() {
+export default function ExperienceTimeline() {
 const style=useStyles();
 
     return (
     <div style={{flexGrow: 1}}> 
-      <h1>Expirience Page</h1>
+      <h1>Experience Page</h1>
       <Grid container spacing={3} style={{padding:'25px',justifyContent:'center'}}>
         <Grid container item xs={12} sm={6} style={{background:"#002B5B",margin:'15px'}}>
           <div style={{flexGrow: 1}}>
-            <h2>Working expirience</h2>
+            <h2>Working experience</h2>
             <Box >
               <h3>Jobs</h3>
               <Timeline>
-                  <WorkExpirienceTimelineItem fromTo='2020-present' companyName='Teletrader doo.' technologies='.NET, React' position='Software Developer' icon={<LaptopIcon/>} />
+                  <WorkExperienceTimelineItem fromTo='2020-present' companyName='Teletrader doo.' technologies='.NET, React' position='Software Developer' icon={<LaptopIcon/>} />
               </Timeline>
             </Box>
             <Box >
               <h3>Faculty</h3>
               <Timeline>
-                  <WorkExpirienceTimelineItem fromTo='2019' companyName='Faculty of organizational science - Universty of Belgrade' technologies='' position='Undergradute teaching assistent' icon={<CoPresentIcon/>} />
-                  <WorkExpirienceTimelineItem fromTo='2018' companyName='Faculty of organizational science - Universty of Belgrade' technologies='Exam preparation' position='Lecturer' icon={<Diversity3Icon/>} />
-                  <WorkExpirienceTimelineItem fromTo='2018' companyName='Faculty of organizational science - Universty of Belgrade' technologies='' position='Student Mentor' icon={<QuizIcon/>} />
+                  <WorkExperienceTimelineItem fromTo='2019' companyName='Faculty of organizational science - Universty of Belgrade' technologies='' position='Undergradute teaching assistent' icon={<CoPresentIcon/>} />
+                  <WorkExperienceTimelineItem fromTo='2018' companyName='Faculty of organizational science - Universty of Belgrade' technologies='Exam preparation' position='Lecturer' icon={<Diversity3Icon/>} />
+                  <WorkExperienceTimelineItem fromTo='2018' companyName='Faculty of organizational science - Universty of Belgrade' technologies='' position='Student Mentor' icon={<QuizIcon/>} />
                 </Timeline>
             </Box>
             <Box >
               <h3>FONIS (students organization on Faculty of organizational science - Universty of Belgrade)</h3>
               <Timeline>
-                  <WorkExpirienceTimelineItem fromTo='2019' companyName='FONIS' technologies='High School Hackaton' position='Coordinator' icon={<LanIcon/>} />
-                  <WorkExpirienceTimelineItem fromTo='2018' companyName='FONIS' technologies='FON Hackaton' position='PR Team Member' icon={<Diversity3Icon/>} />
-                  <WorkExpirienceTimelineItem fromTo='2018' companyName='FONIS' technologies='' position='Team Member' icon={<GroupsIcon/>} />
+                  <WorkExperienceTimelineItem fromTo='2019' companyName='FONIS' technologies='High School Hackaton' position='Coordinator' icon={<LanIcon/>} />
+                  <WorkExperienceTimelineItem fromTo='2018' companyName='FONIS' technologies='FON Hackaton' position='PR Team Member' icon={<Diversity3Icon/>} />
+                  <WorkExperienceTimelineItem fromTo='2018' companyName='FONIS' technologies='' position='Team Member' icon={<GroupsIcon/>} />
               </Timeline>
             </Box>    
           </div>
